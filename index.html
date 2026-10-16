@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raj Kumar Nayak - Solar System</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #030712;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 25px 10px;
+    background: linear-gradient(135deg, #111827, #312e81);
+}
+
+header h1 {
+    color: #facc15;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #dbeafe;
+}
+
+nav {
+    background: #111827;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+.hero {
+    padding: 45px 15px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: #facc15;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.7;
+}
+
+.solar-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    padding: 25px 15px 50px;
+}
+
+.planet-card {
+    width: 210px;
+    min-height: 245px;
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 18px;
+    padding: 20px 12px;
+    transition: 0.3s;
+}
+
+.planet-card:hover {
+    transform: translateY(-8px);
+    border-color: #facc15;
+    box-shadow: 0 0 20px #3730a3;
+}
+
+.planet {
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
+.planet-card h3 {
+    color: #facc15;
+    margin-bottom: 10px;
+}
+
+.planet-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+button {
+    background: #facc15;
+    color: #111827;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #fde68a;
+}
+
+#fact {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    color: #bfdbfe;
+    line-height: 1.6;
+}
+
+footer {
+    background: #111827;
+    padding: 25px 10px;
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .planet-card {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>☀️ SOLAR SYSTEM</h1>
+    <p>Created by Raj Kumar Nayak | Class 9th</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#planets">Planets</a>
+    <a href="#facts">Space Facts</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Explore Our Solar System 🚀</h2>
+    <p>
+        Hamara Solar System Sun aur uske aas-paas ghoomne wale
+        8 planets, moons aur anya space objects se milkar bana hai.
+        <br>
+        Discover the amazing world of space!
+    </p>
+    <button onclick="showFact()">Discover a Space Fact</button>
+    <div id="fact">Click the button to discover an amazing fact!</div>
+</section>
+
+<h2 id="planets" style="color:#facc15;">🌍 The Eight Planets</h2>
+
+<section class="solar-system">
+
+    <div class="planet-card">
+        <div class="planet">☿️</div>
+        <h3>Mercury</h3>
+        <p>Sun ke sabse paas ka planet. Yeh Solar System ka sabse chhota planet hai.</p>
+    </div>
+
+    <div class="planet-card">
+        <div class="planet">🟡</div>
+        <h3>Venus</h3>
+        <p>Solar System ka sabse garam planet. Iska atmosphere bahut dense hai.</p>
+    </div>
+
+    <div class="planet-card">
+        <div class="planet">🌍</div>
+        <h3>Earth</h3>
+        <p>Hamara ghar! Abhi tak jeevan ke liye jaana jaane wala ekmatra planet.</p>
+    </div>
+
+    <div class="planet-card">
+        <div class="planet">🔴</div>
+        <h3>Mars</h3>
+        <p>Isse Red Planet kehte hain. Scientists yahan purane paani ke saboot dhoondhte hain.</p>
+    </div>
+
+    <div class="planet-card">
+        <div class="planet">🟠</div>
+        <h3>Jupiter</h3>
+        <p>Solar System ka sabse bada planet. Is par ek vishal storm hai.</p>
+    </div>
+
+    <div class="planet-card">
+        <div class="planet">🪐</div>
+        <h3>Saturn</h3>
+        <p>Apne sundar rings ke liye famous gas giant planet.</p>
+    </div>
+
+    <div class="planet-card">
+        <div class="planet">🔵</div>
+        <h3>Uranus</h3>
+        <p>Ek ice giant jo apni side par jhuka hua ghoomta hai.</p>
+    </div>
+
+    <div class="planet-card">
+        <div class="planet">🌊</div>
+        <h3>Neptune</h3>
+        <p>Sun se sabse door ka officially recognized planet.</p>
+    </div>
+
+</section>
+
+<section id="facts" class="hero">
+    <h2>🌌 Why Is Space Amazing?</h2>
+    <p>
+        Space mein stars, galaxies, planets aur bahut si mysteries hain.
+        Astronomy humein Universe ko samajhne mein help karti hai.
+    </p>
+</section>
+
+<footer>
+    <h3>Solar System Project</h3>
+    <p>Made with ❤️ by Raj Kumar Nayak</p>
+    <p>Class 9th | School Project</p>
+    <p>© 2026 - Learn, Explore and Discover!</p>
+</footer>
+
+<script>
+const facts = [
+    "Sun Solar System ke total mass ka lagbhag 99.86% rakhta hai.",
+    "Jupiter Solar System ka sabse bada planet hai.",
+    "Earth ko Sun ka ek chakkar lagane mein lagbhag 365.25 din lagte hain.",
+    "Saturn ke aas-paas rings hain jo barf aur chhote rocky particles se bane hain.",
+    "Venus Solar System ka sabse garam planet hai.",
+    "Neptune ko Sun ke chakkar mein lagbhag 165 Earth years lagte hain."
+];
+
+function showFact() {
+    const randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").textContent =
+        "🚀 Amazing Fact: " + facts[randomIndex];
+}
+</script>
+
+</body>
+</html>
